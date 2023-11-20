@@ -93,14 +93,8 @@ $(document).ready(function () {
         for (let i = 0; i < letras.length; i++)     
             $("#divBotones").append("<button type='button' class='btn btn-secondary'>"+ letras[i] +"</button>");
 
-        // Movemos los botenes en dos filas (first-row y second-row)
-        $("#divBotones").append("<div class='first-row'></div>");
-        let fila1 = $("#divBotones > button").slice(0, (letras.length / 2));
-        $("#divBotones > .first-row").append(fila1);
 
-        $("#divBotones").append("<div class='second-row'></div>");
-        let fila2 = $("#divBotones > button");
-        $("#divBotones > .second-row").append(fila2);
+        $("<div class='separator'></div>").insertBefore("#divBotones button:contains('N')");
     }
 
     function comprobarLetra(letra)

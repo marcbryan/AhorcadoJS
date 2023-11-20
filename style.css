@@ -39,18 +39,18 @@
     margin-right: 0;
 }
 
+#divBotones {
+    gap: 5px
+}
+
+div.separator {
+    width: 100%;
+}
+
 #divBotones button {
-    margin-right: 0.5em;
     width: 40px;
     height: 40px;
-}
-
-#divBotones button:last-child {
-    margin-right: 0;
-}
-
-.second-row {
-    padding-top: 10px;
+    margin-right: 5px;
 }
 
 .modal-header {
@@ -73,4 +73,23 @@
 .blink {
     color: red;
     transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .container > h2 {
+        padding-top: 10px;
+    }    
+
+    .letras {
+        font-size: 25px;
+    }
+
+    div.separator {
+        width: 0;
+        margin: 0 -2.5px;
+    }
+
+    #divBotones button {
+        margin-right: 0;
+    }
 }
